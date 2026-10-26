@@ -1,0 +1,59 @@
+{
+  "measured": "2026-10-26",
+  "results": {
+    "Game cards (38) - used to build the rules, NOT independent": {
+      "n": 38,
+      "accuracy": 100,
+      "decidedAccuracy": 100,
+      "unsureRate": 0,
+      "scamRecall": 100,
+      "scamPrecision": 100,
+      "falseAlarms": 0,
+      "missedScams": 0,
+      "confusion": {
+        "tp": 25,
+        "fp": 0,
+        "fn": 0,
+        "tn": 13,
+        "unsure": 0
+      },
+      "scamCalledReal": 0
+    },
+    "Held-out (40) - written before the rules": {
+      "n": 40,
+      "accuracy": 92.5,
+      "decidedAccuracy": 100,
+      "unsureRate": 7.5,
+      "scamRecall": 100,
+      "scamPrecision": 100,
+      "falseAlarms": 0,
+      "missedScams": 0,
+      "confusion": {
+        "tp": 22,
+        "fp": 0,
+        "fn": 0,
+        "tn": 15,
+        "unsure": 3
+      },
+      "scamCalledReal": 0
+    },
+    "Stress (30) - written to break the rules": {
+      "n": 30,
+      "accuracy": 40,
+      "decidedAccuracy": 100,
+      "unsureRate": 60,
+      "scamRecall": 37.5,
+      "scamPrecision": 100,
+      "falseAlarms": 0,
+      "missedScams": 10,
+      "confusion": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 10,
+        "tn": 6,
+        "unsure": 18
+      },
+      "scamCalledReal": 0
+    }
+  }
+}
