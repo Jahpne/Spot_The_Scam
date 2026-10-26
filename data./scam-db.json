@@ -1,0 +1,736 @@
+{
+ "version": "3.0.0",
+ "total_scenarios": 91,
+ "last_updated": "2026-10-25",
+ "note": "Hand-written Nigerian-context examples. Names, numbers and websites are fictional. total_scenarios equals the real number of rows.",
+ "scenarios": [
+  {
+   "id": "db_0001",
+   "category": "bvn_phishing",
+   "label": "scam",
+   "text": "Dear customer, your Orbit Bank account will be blocked in 24 hours. Verify your BVN at orbit-verify-1.top immediately.",
+   "reason": "Uses a lookalike cheap TLD (.top) and creates fake urgency regarding account suspension.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0002",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Kora Bank Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 45,000.",
+   "reason": "Asks for an OTP over text or call, which is a direct security violation.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0003",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "Congratulations! You have been selected for a NGN 1,000,000 grant. Pay a NGN 2,000 processing fee to claim your funds.",
+   "reason": "Classic advance-fee scam requiring upfront payment to receive money.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0004",
+   "category": "fake_alert",
+   "label": "scam",
+   "text": "Credit Alert: NGN 150,000 transferred to your account by mistake. Please refund NGN 150,000 back to personal account 0123456789.",
+   "reason": "Wrong-transfer refund trap; alerts must be verified inside the official banking app.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0005",
+   "category": "crypto_scheme",
+   "label": "scam",
+   "text": "Investment club: Double your money in 3 days! Invest NGN 50,000 and get NGN 100,000. Zero risk guaranteed.",
+   "reason": "Unrealistic financial return promises with zero risk guarantee.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0006",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Orbit Bank: Debit Alert: Acct 3***8821 Amt: NGN 5,000.00 Desc: POS Purchase. Bal: NGN 45,000.00. Questions? Call the number on the back of your card.",
+   "reason": "Valid account notification format containing masked numbers and official support routing.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0007",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Kora Bank: Your OTP is 482913. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+   "reason": "Legitimate OTP delivery containing standard security warning not to share codes.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0008",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Plume MFB: Your OTP is 482914. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+   "reason": "Legitimate OTP delivery containing standard security warning not to share codes.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0009",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Plume MFB Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 35,000.",
+   "reason": "Asks for an OTP over text or call, which is a direct security violation.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0010",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Plume MFB: Debit Alert: Acct 3***8823 Amt: NGN 6,700.00 Desc: POS Purchase. Bal: NGN 43,300.00. Questions? Call the number on the back of your card.",
+   "reason": "Valid account notification format containing masked numbers and official support routing.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0011",
+   "category": "bvn_phishing",
+   "label": "scam",
+   "text": "Dear customer, your Plume MFB account will be blocked in 24 hours. Verify your BVN at plumemfb-verify-4.info immediately.",
+   "reason": "Uses a lookalike cheap TLD (.info) and creates fake urgency regarding account suspension.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0012",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Pulse MFB: Your OTP is 482916. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+   "reason": "Legitimate OTP delivery containing standard security warning not to share codes.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0013",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Pulse MFB Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 10,000.",
+   "reason": "Asks for an OTP over text or call, which is a direct security violation.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0014",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Pulse MFB: Debit Alert: Acct 3***8825 Amt: NGN 8,400.00 Desc: POS Purchase. Bal: NGN 41,600.00. Questions? Call the number on the back of your card.",
+   "reason": "Valid account notification format containing masked numbers and official support routing.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0015",
+   "category": "bvn_phishing",
+   "label": "scam",
+   "text": "Dear customer, your Pulse MFB account will be blocked in 24 hours. Verify your BVN at pulsemfb-verify-6.vip immediately.",
+   "reason": "Uses a lookalike cheap TLD (.vip) and creates fake urgency regarding account suspension.",
+   "source": "team-v2"
+  },
+  {
+   "id": "db_0016",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "Dear customer, your account will be blocked within 24 hours because your BVN is not updated. Update now: kora-bvn-update.co/verify",
+   "reason": "Banks do not block accounts through random links. That web address is not the bank's site, and the deadline is there to rush you.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0017",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Hello, this is Kora Bank customer care. We saw a failed debit of ₦45,000 on your account. Please send the 6-digit code we just texted you so we can reverse it.",
+   "reason": "That code is your OTP. It lets someone move your money. Real bank staff never ask you for it.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0018",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "CONGRATULATIONS! Your number has won ₦2,500,000 in the Ziva Mega Draw. To claim, send a ₦15,000 processing fee to 0123456789 (Plume MFB). Claim within 2 hours!",
+   "reason": "You cannot win a draw you never entered, and real prizes never ask you to pay first.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0019",
+   "category": "fake_alert",
+   "label": "scam",
+   "text": "Credit Alert! ₦150,000 was sent to your account by mistake. Please return ₦150,000 immediately to 0123456789. Do not ignore this message.",
+   "reason": "Fake alerts come from a phone number, not your bank. Check your real balance in your banking app. If nothing arrived, there is nothing to return.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0020",
+   "category": "fake_alert",
+   "label": "scam",
+   "text": "Boss I have paid ₦80,000. Check your account. See the screenshot: Transfer Successful. Please send the goods now, I am in a hurry.",
+   "reason": "A screenshot proves nothing, because anyone can fake one. Only your own bank app or alert confirms the money arrived.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0021",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "From: Kora Bank Security <support@kora-bank-secure.com>\nSubject: Account suspended: action required\n\nWe noticed unusual activity. Your account is suspended. Click here to verify your identity within 12 hours or it will be closed permanently.",
+   "reason": "The sender domain is \"kora-bank-secure.com\", which is not the bank's own domain. Threats and tight deadlines are classic phishing.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0022",
+   "category": "impersonation",
+   "label": "scam",
+   "text": "\"I am from the bank's fraud team. Someone is trying to empty your account. For safety, move your money to this safe account now. Stay on the line and do not tell anyone.\"",
+   "reason": "There is no \"safe account\". Real fraud teams never tell you to transfer money or keep a secret. Hang up and call the number on the back of your card.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0023",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "Earn ₦30,000 daily just by liking videos! Limited slots. To start, pay a ₦5,000 registration fee. No experience needed, 100% guaranteed.",
+   "reason": "Real employers pay you, not the other way round. \"Guaranteed\" daily income for easy work is a warning sign.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0024",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "You are pre-approved for a ₦500,000 loan at 0% interest! Send a ₦10,000 insurance fee first and the money drops in 10 minutes.",
+   "reason": "Genuine lenders take fees from the loan or charge openly. An upfront \"insurance\" fee sent to a stranger is a scam pattern.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0025",
+   "category": "impersonation",
+   "label": "scam",
+   "text": "Hi it is Tunde! I lost my phone, this is my new number. Please send ₦20,000 urgently, I will pay you back tonight. Do not call, my line is bad.",
+   "reason": "Scammers copy a friend's name and photo. Call your friend on their old number first. \"Do not call\" is the giveaway.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0026",
+   "category": "pos_trick",
+   "label": "scam",
+   "text": "Your card is stuck at the ATM. A friendly stranger offers to help and says: \"Enter your PIN again while I stand close and I will press cancel.\"",
+   "reason": "He is watching your PIN and may swap your card. Never accept help at an ATM. Press cancel, then call your bank on the number on your card.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0027",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Your debit card has been restricted. Call 0803 000 0000 to reactivate. Have your card number, expiry date and PIN ready.",
+   "reason": "A bank never needs your PIN to reactivate a card. That number belongs to a stranger, not the bank.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0028",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "Your meter has an unpaid bill of ₦38,500. Pay within 1 hour or face disconnection: bit.ly/pw-pay-now",
+   "reason": "Shortened links hide where you are going, and utilities do not threaten one-hour cutoffs by link. Check bills in the official app or at their office.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0029",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "FREE 50GB data for Ziva's anniversary! Forward to 10 groups then click: ziva-free-gb.xyz",
+   "reason": "Chain messages that ask you to forward and click are built to spread scams. Real offers come from the provider's own app or number.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0030",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Your BVN is due to expire. Click bvn-renew.info or call us to renew and avoid account freeze.",
+   "reason": "A BVN does not expire. This is a trick to collect your details.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0031",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "Your parcel is held at customs. Pay a ₦3,200 clearance fee here: parcel-track-ng.com or it will be returned.",
+   "reason": "If you are not expecting a parcel, it is not yours. Fees through random links are a trap. Real couriers use their own app.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0032",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "From: Kora Bank <alerts@korabank-mail.net>\nSubject: New device login\n\nSomeone logged in from a new device. If it was not you, reply with your password so we can secure the account.",
+   "reason": "No real security team asks for your password by email. Change it yourself inside the official app.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0033",
+   "category": "pos_trick",
+   "label": "scam",
+   "text": "The POS agent says the network is bad. He says: \"Give me your PIN and I will enter it for you, it is faster.\"",
+   "reason": "Only you should type your PIN. Walk away, or enter it yourself while covering the keypad.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0034",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Federal scholarship of ₦500,000 approved for you. Send your BVN, card number and PIN to receive payment. Reply within 1 hour.",
+   "reason": "No grant needs your PIN. Asking for card details and a deadline together is the whole scam.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0035",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "Double your money in 7 days! Invest ₦50,000, get ₦100,000. Guaranteed returns, zero risk. Join before slots finish.",
+   "reason": "Nobody can guarantee double returns in a week. These schemes pay early members with new victims' money until they collapse.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0036",
+   "category": "pos_trick",
+   "label": "scam",
+   "text": "You asked the POS agent for ₦5,000 cash. The screen says NGN 50,000.00. He says: \"It is only a test, it will reverse. Just enter your PIN.\"",
+   "reason": "Check the amount on the screen before you enter your PIN. \"It will reverse\" is a stall. Cancel and walk away.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0037",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "A transfer of ₦300,000 to \"Obinna E.\" is pending approval. If this was not you, tap kora-secure.net/cancel to stop it.",
+   "reason": "It looks tidy, but the link is not the bank's site. If you are worried, open your banking app yourself and check.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0038",
+   "category": "fake_alert",
+   "label": "scam",
+   "text": "Good day, I am a POS agent. I sent ₦50,000 to your account by wrong number. Please return it, my family needs it for hospital bills.",
+   "reason": "Check your real balance first. If the money is not there, it is a scam. If it is, a wrong transfer is fixed through your bank, not a stranger's story.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0039",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "\"We are upgrading our system. To keep your account active, please read me the code that will appear on your phone now.\"",
+   "reason": "The code that arrives by text is your OTP. It is a key to your money. Never read it out, even to \"the bank\".",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0040",
+   "category": "impersonation",
+   "label": "scam",
+   "text": "From: Payroll Dept <hr@yourcompany-payroll.co>\nSubject: Salary review: confirm details\n\nYour salary increase is ready. Open the attached file (Salary_Update.zip) and enter your bank login to confirm.",
+   "reason": "An unexpected attachment plus \"enter your bank login\" is credential theft. Check with HR in person or on a number you already have.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0041",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Debit Alert: Acct 2***4567 Amt: NGN 5,000.00 Desc: POS purchase Date: 24-Oct-2026 Bal: NGN 42,310.55. Questions? Call the number on the back of your card.",
+   "reason": "It shows account details and a balance, has no links, and sends you to the number on your card. That is how genuine alerts look.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0042",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Your OTP is 482913. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+   "reason": "You asked for this code (for example, you were logging in), and the message warns you not to share it. The danger is giving the code away, not receiving it.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0043",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "You have used 90% of your data. Open the Ziva app to buy more.",
+   "reason": "No link, no threat, no payment to a stranger. It points you to the official app.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0044",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "From: Kora Bank <no-reply@korabank.com>\nSubject: Your October statement is ready\n\nYour statement is ready. Log in to the Kora app to view it. We will never ask for your PIN, password or OTP.",
+   "reason": "It sends you to the app instead of a link, repeats the safety warning, and the sender domain matches the bank.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0045",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "PLUME FOODS\nTERMINAL ID: 2057XXXX\nRRN: 612345678901\nCARD: **** 4567\nAMOUNT: NGN 8,400.00\nSTATUS: APPROVED\nCUSTOMER COPY",
+   "reason": "Terminal ID, reference number, masked card, the amount you agreed, and a clear status. Keep it until your statement matches.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0046",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "POWERCO PREPAID\nMETER: 0123456789\nAMOUNT: NGN 5,000.00\nUNITS: 71.4 kWh\nTOKEN: 1234-5678-9012-3456\nREF: PC-77120934\nTHANK YOU",
+   "reason": "A receipt for something you just bought, with a meter number, units and a reference. It asks you for nothing.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0047",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Payment of NGN 120,000 for Term 1 fees received. Receipt No: LV/2026/0482. Collect your receipt from the bursar's office.",
+   "reason": "It confirms a payment you made, gives a receipt number, and asks you to collect it in person. No link and no new payment.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0048",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Your order #48213 is out for delivery today. Track it in the ShopNaija app.",
+   "reason": "It is about an order you placed, and it points to the app. Nothing to click, nothing to pay.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0049",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Card ending 4567 used for NGN 12,000.00 online. If this was not you, call the number on the back of your card or visit a branch.",
+   "reason": "It tells you to use the number you already have and asks for nothing. Compare that with scams that hand you a new number or a link.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0050",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "New login on iPhone 13. If this was not you, open the Kora app and tap Lock Account.",
+   "reason": "It makes you act inside the app you already have. It does not ask for your password or send you to a web link.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0051",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "A buyer says they paid ₦25,000. Your banking app shows a credit of ₦25,000 with their name and a reference number, and your balance went up by ₦25,000.",
+   "reason": "The money is confirmed inside your own app. That is the only proof that counts.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0052",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Call me when you are free. Nothing urgent, I just want to hear your voice.",
+   "reason": "Saved contact, same chat history, no money request, no pressure. Not every message is a trap.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0053",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "From: Plume MFB <alerts@plumemfb.com>\nSubject: Loan repayment reminder\n\nYour repayment of ₦12,500 is due on 30-Oct. It will be taken automatically from your linked account. No action needed.",
+   "reason": "It matches a loan you took, asks you for nothing, and includes no link.",
+   "source": "game-cards"
+  },
+  {
+   "id": "db_0054",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Orbit Bank: Your BVN is not linked to your NIN. Dial the number below and read out the code you receive to avoid account restriction.",
+   "reason": "Asks you to read out an OTP over the phone. Banks never need it.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0055",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Hello, I'm from Kora Bank. We noticed a duplicate debit of NGN 18,500. To reverse it, please forward the OTP you just received.",
+   "reason": "Fake reversal story used to steal an OTP.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0056",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "Dear customer, your Plume MFB token has expired. Download the new token app from plume-token.xyz to continue transacting.",
+   "reason": "Fake app link on a cheap lookalike domain. Real apps come from official stores.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0057",
+   "category": "job_scam",
+   "label": "scam",
+   "text": "Earn NGN 20,000 daily from home by rating products. Registration fee NGN 2,500. Limited slots, start today.",
+   "reason": "Real jobs do not charge you to start. Easy daily pay plus a fee is a scam pattern.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0058",
+   "category": "loan_scam",
+   "label": "scam",
+   "text": "Pre-qualified for a NGN 300,000 loan with no collateral. Send NGN 5,000 commitment fee to unlock disbursement.",
+   "reason": "Upfront fee before a loan is paid out is the standard loan scam.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0059",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "Your NIN slip is ready for collection. Pay NGN 1,500 processing at nin-slip-ng.top and upload your selfie.",
+   "reason": "Cheap lookalike domain asking for payment and a selfie.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0060",
+   "category": "sim_scam",
+   "label": "scam",
+   "text": "Your SIM will be deactivated in 24 hours. Send your NIN and BVN to 0803 000 0000 to keep your line.",
+   "reason": "Threat plus request for identity numbers. Networks do not collect these by text.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0061",
+   "category": "impersonation",
+   "label": "scam",
+   "text": "Hi dear, it's your cousin Bisi. I'm stranded and my account is locked. Please transfer NGN 30,000 to this account and I'll refund you tonight. Don't call me yet.",
+   "reason": "Family impersonation with urgency and a request not to call.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0062",
+   "category": "impersonation",
+   "label": "scam",
+   "text": "MD here. I'm in a meeting and can't talk. Buy five gift cards of NGN 50,000 and send me the codes. Keep it between us.",
+   "reason": "Boss impersonation: secrecy and gift card codes.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0063",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Your electricity token was not generated. Reply with your card details to receive a refund within 1 hour.",
+   "reason": "Refund story to collect card details, with a deadline.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0064",
+   "category": "pos_trick",
+   "label": "scam",
+   "text": "A stranger at the ATM says: 'Your card is stuck, give me your PIN and I will cancel it for you.'",
+   "reason": "Shoulder-surfing and card swap. Never share your PIN.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0065",
+   "category": "pos_trick",
+   "label": "scam",
+   "text": "The POS agent says: 'Network is failing, let me hold your card and PIN and I will come back in five minutes.'",
+   "reason": "Your card and PIN must never leave your hands.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0066",
+   "category": "pos_trick",
+   "label": "scam",
+   "text": "A man at the POS stand says the machine charged you twice and asks for your PIN again to refund the extra amount.",
+   "reason": "Fake double charge to get your PIN a second time.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0067",
+   "category": "fake_alert",
+   "label": "scam",
+   "text": "Customer sends a transfer screenshot showing 'Successful' but your banking app shows no credit. He says the alert will come later; please release the goods.",
+   "reason": "Screenshots are easy to fake. Release goods only after your own app shows the money.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0068",
+   "category": "fake_alert",
+   "label": "scam",
+   "text": "CREDIT: NGN 250,000 pending. To release the funds, pay a NGN 12,000 activation fee to the account below.",
+   "reason": "A real credit never needs a fee to release.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0069",
+   "category": "delivery_scam",
+   "label": "scam",
+   "text": "Your parcel is stuck at the airport. Pay NGN 6,800 at parcel-release.click to avoid return.",
+   "reason": "Fee link on a cheap domain for a parcel you did not expect.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0070",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "You won a brand new phone in the Ziva loyalty draw. Pay NGN 3,500 delivery fee to receive it.",
+   "reason": "Prize that needs a fee is a scam.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0071",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "Win big! Send NGN 1,000 to join the lucky draw, winners get NGN 500,000 daily. Guaranteed winners every day.",
+   "reason": "Paid lottery with guaranteed winners is not real.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0072",
+   "category": "crypto_scheme",
+   "label": "scam",
+   "text": "Forex signals group: deposit NGN 100,000 and we return NGN 400,000 in 14 days. Risk free, screenshots of winners inside.",
+   "reason": "Guaranteed fast returns. Early members get paid with new members' money.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0073",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "Your account has been compromised. Open kora-secure-login.info and enter your username, password and token to protect your money.",
+   "reason": "Fake login page on a lookalike domain.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0074",
+   "category": "impersonation",
+   "label": "scam",
+   "text": "Hello, this is your landlord. We changed bank. Please send the rent to this new account number and ignore the old one.",
+   "reason": "Changed account details by message: confirm in person first.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0075",
+   "category": "impersonation",
+   "label": "scam",
+   "text": "School fees update: kindly pay the balance to the new account number below. The old account is no longer in use.",
+   "reason": "Payment redirection. Confirm with the school office directly.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0076",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Dear student, your scholarship of NGN 250,000 is approved. Send your BVN, card number and PIN to receive it.",
+   "reason": "No grant needs your PIN or card number.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0077",
+   "category": "link_scam",
+   "label": "scam",
+   "text": "Your data bundle will expire in 1 hour. Open ziva-renew.top and enter your card details to renew.",
+   "reason": "Deadline plus a cheap lookalike domain asking for card details.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0078",
+   "category": "otp_theft",
+   "label": "scam",
+   "text": "Your account is on hold. Call this number and give the agent the six-digit code we sent to restore access.",
+   "reason": "The six-digit code is your OTP. Never read it out.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0079",
+   "category": "fee_scam",
+   "label": "scam",
+   "text": "Congratulations, your phone number was selected for a NGN 750,000 cash prize. Reply with your full name, BVN and account number.",
+   "reason": "Prize bait used to collect identity details.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0080",
+   "category": "delivery_scam",
+   "label": "scam",
+   "text": "Customs notice: your package needs a clearance payment of NGN 9,000. Pay now to avoid extra charges.",
+   "reason": "Unexpected clearance fee with pressure.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0081",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Orbit Bank: You received NGN 7,500.00 from CHIDI K. Your new balance is NGN 31,240.00. Thank you for banking with us.",
+   "reason": "Plain credit notice with a balance and no request.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0082",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Your OTP for the transfer of NGN 25,000 is 118452. Valid for 5 minutes. If you did not request this, ignore this message and do not share the code.",
+   "reason": "You started the transfer, and the message warns you not to share the code.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0083",
+   "category": "safe_telco",
+   "label": "real",
+   "text": "Ziva: Your 1.5GB weekly plan has been activated. It expires on 01-Nov. Use the Ziva app to renew.",
+   "reason": "Plan confirmation that points to the official app.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0084",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Your Orbit Bank statement for September is ready. Sign in to the Orbit app to view it. We will never ask for your PIN or OTP.",
+   "reason": "Directs you to the app and repeats the safety warning.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0085",
+   "category": "safe_delivery",
+   "label": "real",
+   "text": "ShopNaija: Your order #31982 is on its way. The rider will call you from the number on your tracking page. Pay only through the app.",
+   "reason": "Order you placed, tracking info, payment through the app only.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0086",
+   "category": "safe_receipt",
+   "label": "real",
+   "text": "Token purchase of NGN 2,000 was successful. Token: 4455-7788-1122-9900. Ref PC-90321.",
+   "reason": "Receipt for something you bought, with a reference.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0087",
+   "category": "safe_personal",
+   "label": "real",
+   "text": "Hey, are we still meeting at 4? I'm leaving the office now.",
+   "reason": "Ordinary chat with no money, links or pressure.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0088",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Dear parent, school resumes on 2 November. Fees can be paid at the school bursary or through the school's official app.",
+   "reason": "Directs payment to official channels.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0089",
+   "category": "safe_notification",
+   "label": "real",
+   "text": "Your loan repayment of NGN 8,000 was received. Thank you. Outstanding balance: NGN 24,000.",
+   "reason": "Confirms a payment with a balance and asks for nothing.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0090",
+   "category": "safe_receipt",
+   "label": "real",
+   "text": "CITY MART, Terminal 4021XXXX, RRN 551203948812, Amount NGN 6,300.00, Approved, Customer copy.",
+   "reason": "Complete POS slip details.",
+   "source": "v3-new"
+  },
+  {
+   "id": "db_0091",
+   "category": "safe_personal",
+   "label": "real",
+   "text": "Your appointment with Dr. Okeke is confirmed for Thursday at 9:30am. Call the clinic if you need to reschedule.",
+   "reason": "Appointment confirmation with no payment or secrets.",
+   "source": "v3-new"
+  }
+ ]
+}
