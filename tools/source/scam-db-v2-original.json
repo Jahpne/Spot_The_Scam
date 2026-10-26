@@ -1,0 +1,343 @@
+{
+  "version": "2.0.0",
+  "total_scenarios": 1543,
+  "last_updated": "2026-10-25",
+  "scenarios": [
+    {
+      "id": "db_0001",
+      "category": "bvn_phishing",
+      "text": "Dear customer, your Orbit Bank account will be blocked in 24 hours. Verify your BVN at orbit-verify-1.top immediately.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Uses a lookalike cheap TLD (.top) and creates fake urgency regarding account suspension."
+    },
+    {
+      "id": "db_0002",
+      "category": "otp_theft",
+      "text": "Kora Bank Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 45,000.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Asks for an OTP over text or call, which is a direct security violation."
+    },
+    {
+      "id": "db_0003",
+      "category": "fee_scam",
+      "text": "Congratulations! You have been selected for a NGN 1,000,000 grant. Pay a NGN 2,000 processing fee to claim your funds.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Classic advance-fee scam requiring upfront payment to receive money."
+    },
+    {
+      "id": "db_0004",
+      "category": "fake_alert",
+      "text": "Credit Alert: NGN 150,000 transferred to your account by mistake. Please refund NGN 150,000 back to personal account 0123456789.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Wrong-transfer refund trap; alerts must be verified inside the official banking app."
+    },
+    {
+      "id": "db_0005",
+      "category": "crypto_scheme",
+      "text": "Investment club: Double your money in 3 days! Invest NGN 50,000 and get NGN 100,000. Zero risk guaranteed.",
+      "label": "scam",
+      "risk_score": 0.95,
+      "reason": "Unrealistic financial return promises with zero risk guarantee."
+    },
+    {
+      "id": "db_0006",
+      "category": "safe_notification",
+      "text": "Orbit Bank: Debit Alert: Acct 3***8821 Amt: NGN 5,000.00 Desc: POS Purchase. Bal: NGN 45,000.00. Questions? Call the number on the back of your card.",
+      "label": "real",
+      "risk_score": 0.02,
+      "reason": "Valid account notification format containing masked numbers and official support routing."
+    },
+    {
+      "id": "db_0007",
+      "category": "safe_notification",
+      "text": "Kora Bank: Your OTP is 482913. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+      "label": "real",
+      "risk_score": 0.01,
+      "reason": "Legitimate OTP delivery containing standard security warning not to share codes."
+    },
+    {
+      "id": "db_0008",
+      "category": "bvn_phishing",
+      "text": "Dear customer, your Kora Bank account will be blocked in 24 hours. Verify your BVN at kora-verify-2.xyz immediately.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Uses a lookalike cheap TLD (.xyz) and creates fake urgency regarding account suspension."
+    },
+    {
+      "id": "db_0009",
+      "category": "otp_theft",
+      "text": "Savanna Bank Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 20,000.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Asks for an OTP over text or call, which is a direct security violation."
+    },
+    {
+      "id": "db_0010",
+      "category": "fee_scam",
+      "text": "Congratulations! You have been selected for a NGN 1,000,000 grant. Pay a NGN 3,000 processing fee to claim your funds.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Classic advance-fee scam requiring upfront payment to receive money."
+    },
+    {
+      "id": "db_0011",
+      "category": "fake_alert",
+      "text": "Credit Alert: NGN 16,500 transferred to your account by mistake. Please refund NGN 16,500 back to personal account 0123456789.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Wrong-transfer refund trap; alerts must be verified inside the official banking app."
+    },
+    {
+      "id": "db_0012",
+      "category": "crypto_scheme",
+      "text": "Investment club: Double your money in 3 days! Invest NGN 51,500 and get NGN 103,000. Zero risk guaranteed.",
+      "label": "scam",
+      "risk_score": 0.95,
+      "reason": "Unrealistic financial return promises with zero risk guarantee."
+    },
+    {
+      "id": "db_0013",
+      "category": "safe_notification",
+      "text": "Savanna Bank: Debit Alert: Acct 3***8822 Amt: NGN 5,850.00 Desc: POS Purchase. Bal: NGN 44,150.00. Questions? Call the number on the back of your card.",
+      "label": "real",
+      "risk_score": 0.02,
+      "reason": "Valid account notification format containing masked numbers and official support routing."
+    },
+    {
+      "id": "db_0014",
+      "category": "safe_notification",
+      "text": "Plume MFB: Your OTP is 482914. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+      "label": "real",
+      "risk_score": 0.01,
+      "reason": "Legitimate OTP delivery containing standard security warning not to share codes."
+    },
+    {
+      "id": "db_0015",
+      "category": "bvn_phishing",
+      "text": "Dear customer, your Savanna Bank account will be blocked in 24 hours. Verify your BVN at savanna-verify-3.click immediately.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Uses a lookalike cheap TLD (.click) and creates fake urgency regarding account suspension."
+    },
+    {
+      "id": "db_0016",
+      "category": "otp_theft",
+      "text": "Plume MFB Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 35,000.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Asks for an OTP over text or call, which is a direct security violation."
+    },
+    {
+      "id": "db_0017",
+      "category": "fee_scam",
+      "text": "Congratulations! You have been selected for a NGN 1,000,000 grant. Pay a NGN 4,000 processing fee to claim your funds.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Classic advance-fee scam requiring upfront payment to receive money."
+    },
+    {
+      "id": "db_0018",
+      "category": "fake_alert",
+      "text": "Credit Alert: NGN 33,000 transferred to your account by mistake. Please refund NGN 33,000 back to personal account 0123456789.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Wrong-transfer refund trap; alerts must be verified inside the official banking app."
+    },
+    {
+      "id": "db_0019",
+      "category": "crypto_scheme",
+      "text": "Investment club: Double your money in 3 days! Invest NGN 53,000 and get NGN 106,000. Zero risk guaranteed.",
+      "label": "scam",
+      "risk_score": 0.95,
+      "reason": "Unrealistic financial return promises with zero risk guarantee."
+    },
+    {
+      "id": "db_0020",
+      "category": "safe_notification",
+      "text": "Plume MFB: Debit Alert: Acct 3***8823 Amt: NGN 6,700.00 Desc: POS Purchase. Bal: NGN 43,300.00. Questions? Call the number on the back of your card.",
+      "label": "real",
+      "risk_score": 0.02,
+      "reason": "Valid account notification format containing masked numbers and official support routing."
+    },
+    {
+      "id": "db_0021",
+      "category": "safe_notification",
+      "text": "Ziva Bank: Your OTP is 482915. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+      "label": "real",
+      "risk_score": 0.01,
+      "reason": "Legitimate OTP delivery containing standard security warning not to share codes."
+    },
+    {
+      "id": "db_0022",
+      "category": "bvn_phishing",
+      "text": "Dear customer, your Plume MFB account will be blocked in 24 hours. Verify your BVN at plumemfb-verify-4.info immediately.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Uses a lookalike cheap TLD (.info) and creates fake urgency regarding account suspension."
+    },
+    {
+      "id": "db_0023",
+      "category": "otp_theft",
+      "text": "Ziva Bank Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 50,000.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Asks for an OTP over text or call, which is a direct security violation."
+    },
+    {
+      "id": "db_0024",
+      "category": "fee_scam",
+      "text": "Congratulations! You have been selected for a NGN 1,000,000 grant. Pay a NGN 5,000 processing fee to claim your funds.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Classic advance-fee scam requiring upfront payment to receive money."
+    },
+    {
+      "id": "db_0025",
+      "category": "fake_alert",
+      "text": "Credit Alert: NGN 49,500 transferred to your account by mistake. Please refund NGN 49,500 back to personal account 0123456789.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Wrong-transfer refund trap; alerts must be verified inside the official banking app."
+    },
+    {
+      "id": "db_0026",
+      "category": "crypto_scheme",
+      "text": "Investment club: Double your money in 3 days! Invest NGN 54,500 and get NGN 109,000. Zero risk guaranteed.",
+      "label": "scam",
+      "risk_score": 0.95,
+      "reason": "Unrealistic financial return promises with zero risk guarantee."
+    },
+    {
+      "id": "db_0027",
+      "category": "safe_notification",
+      "text": "Ziva Bank: Debit Alert: Acct 3***8824 Amt: NGN 7,550.00 Desc: POS Purchase. Bal: NGN 42,450.00. Questions? Call the number on the back of your card.",
+      "label": "real",
+      "risk_score": 0.02,
+      "reason": "Valid account notification format containing masked numbers and official support routing."
+    },
+    {
+      "id": "db_0028",
+      "category": "safe_notification",
+      "text": "Pulse MFB: Your OTP is 482916. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+      "label": "real",
+      "risk_score": 0.01,
+      "reason": "Legitimate OTP delivery containing standard security warning not to share codes."
+    },
+    {
+      "id": "db_0029",
+      "category": "bvn_phishing",
+      "text": "Dear customer, your Ziva Bank account will be blocked in 24 hours. Verify your BVN at ziva-verify-5.link immediately.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Uses a lookalike cheap TLD (.link) and creates fake urgency regarding account suspension."
+    },
+    {
+      "id": "db_0030",
+      "category": "otp_theft",
+      "text": "Pulse MFB Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 10,000.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Asks for an OTP over text or call, which is a direct security violation."
+    },
+    {
+      "id": "db_0031",
+      "category": "fee_scam",
+      "text": "Congratulations! You have been selected for a NGN 1,000,000 grant. Pay a NGN 2,000 processing fee to claim your funds.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Classic advance-fee scam requiring upfront payment to receive money."
+    },
+    {
+      "id": "db_0032",
+      "category": "fake_alert",
+      "text": "Credit Alert: NGN 66,000 transferred to your account by mistake. Please refund NGN 66,000 back to personal account 0123456789.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Wrong-transfer refund trap; alerts must be verified inside the official banking app."
+    },
+    {
+      "id": "db_0033",
+      "category": "crypto_scheme",
+      "text": "Investment club: Double your money in 3 days! Invest NGN 56,000 and get NGN 112,000. Zero risk guaranteed.",
+      "label": "scam",
+      "risk_score": 0.95,
+      "reason": "Unrealistic financial return promises with zero risk guarantee."
+    },
+    {
+      "id": "db_0034",
+      "category": "safe_notification",
+      "text": "Pulse MFB: Debit Alert: Acct 3***8825 Amt: NGN 8,400.00 Desc: POS Purchase. Bal: NGN 41,600.00. Questions? Call the number on the back of your card.",
+      "label": "real",
+      "risk_score": 0.02,
+      "reason": "Valid account notification format containing masked numbers and official support routing."
+    },
+    {
+      "id": "db_0035",
+      "category": "safe_notification",
+      "text": "Orbit Bank: Your OTP is 482917. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+      "label": "real",
+      "risk_score": 0.01,
+      "reason": "Legitimate OTP delivery containing standard security warning not to share codes."
+    },
+    {
+      "id": "db_0036",
+      "category": "bvn_phishing",
+      "text": "Dear customer, your Pulse MFB account will be blocked in 24 hours. Verify your BVN at pulsemfb-verify-6.vip immediately.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Uses a lookalike cheap TLD (.vip) and creates fake urgency regarding account suspension."
+    },
+    {
+      "id": "db_0037",
+      "category": "otp_theft",
+      "text": "Orbit Bank Security: Unauthorized login detected. Read us the 6-digit code sent to your phone to cancel the transfer of NGN 25,000.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Asks for an OTP over text or call, which is a direct security violation."
+    },
+    {
+      "id": "db_0038",
+      "category": "fee_scam",
+      "text": "Congratulations! You have been selected for a NGN 1,000,000 grant. Pay a NGN 3,000 processing fee to claim your funds.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Classic advance-fee scam requiring upfront payment to receive money."
+    },
+    {
+      "id": "db_0039",
+      "category": "fake_alert",
+      "text": "Credit Alert: NGN 82,500 transferred to your account by mistake. Please refund NGN 82,500 back to personal account 0123456789.",
+      "label": "scam",
+      "risk_score": 0.92,
+      "reason": "Wrong-transfer refund trap; alerts must be verified inside the official banking app."
+    },
+    {
+      "id": "db_0040",
+      "category": "crypto_scheme",
+      "text": "Investment club: Double your money in 3 days! Invest NGN 57,500 and get NGN 115,000. Zero risk guaranteed.",
+      "label": "scam",
+      "risk_score": 0.95,
+      "reason": "Unrealistic financial return promises with zero risk guarantee."
+    },
+    {
+      "id": "db_0041",
+      "category": "safe_notification",
+      "text": "Orbit Bank: Debit Alert: Acct 3***8826 Amt: NGN 9,250.00 Desc: POS Purchase. Bal: NGN 40,750.00. Questions? Call the number on the back of your card.",
+      "label": "real",
+      "risk_score": 0.02,
+      "reason": "Valid account notification format containing masked numbers and official support routing."
+    },
+    {
+      "id": "db_0042",
+      "category": "safe_notification",
+      "text": "Kora Bank: Your OTP is 482918. It expires in 5 minutes. Never share this code with anyone, even bank staff.",
+      "label": "real",
+      "risk_score": 0.01,
+      "reason": "Legitimate OTP delivery containing standard security warning not to share codes."
+    }
+  ]
+}

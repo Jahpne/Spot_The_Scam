@@ -1,0 +1,230 @@
+[
+ {
+  "category": "otp_theft",
+  "label": "scam",
+  "text": "Orbit Bank: Your BVN is not linked to your NIN. Dial the number below and read out the code you receive to avoid account restriction.",
+  "reason": "Asks you to read out an OTP over the phone. Banks never need it."
+ },
+ {
+  "category": "otp_theft",
+  "label": "scam",
+  "text": "Hello, I'm from Kora Bank. We noticed a duplicate debit of NGN 18,500. To reverse it, please forward the OTP you just received.",
+  "reason": "Fake reversal story used to steal an OTP."
+ },
+ {
+  "category": "link_scam",
+  "label": "scam",
+  "text": "Dear customer, your Plume MFB token has expired. Download the new token app from plume-token.xyz to continue transacting.",
+  "reason": "Fake app link on a cheap lookalike domain. Real apps come from official stores."
+ },
+ {
+  "category": "job_scam",
+  "label": "scam",
+  "text": "Earn NGN 20,000 daily from home by rating products. Registration fee NGN 2,500. Limited slots, start today.",
+  "reason": "Real jobs do not charge you to start. Easy daily pay plus a fee is a scam pattern."
+ },
+ {
+  "category": "loan_scam",
+  "label": "scam",
+  "text": "Pre-qualified for a NGN 300,000 loan with no collateral. Send NGN 5,000 commitment fee to unlock disbursement.",
+  "reason": "Upfront fee before a loan is paid out is the standard loan scam."
+ },
+ {
+  "category": "link_scam",
+  "label": "scam",
+  "text": "Your NIN slip is ready for collection. Pay NGN 1,500 processing at nin-slip-ng.top and upload your selfie.",
+  "reason": "Cheap lookalike domain asking for payment and a selfie."
+ },
+ {
+  "category": "sim_scam",
+  "label": "scam",
+  "text": "Your SIM will be deactivated in 24 hours. Send your NIN and BVN to 0803 000 0000 to keep your line.",
+  "reason": "Threat plus request for identity numbers. Networks do not collect these by text."
+ },
+ {
+  "category": "impersonation",
+  "label": "scam",
+  "text": "Hi dear, it's your cousin Bisi. I'm stranded and my account is locked. Please transfer NGN 30,000 to this account and I'll refund you tonight. Don't call me yet.",
+  "reason": "Family impersonation with urgency and a request not to call."
+ },
+ {
+  "category": "impersonation",
+  "label": "scam",
+  "text": "MD here. I'm in a meeting and can't talk. Buy five gift cards of NGN 50,000 and send me the codes. Keep it between us.",
+  "reason": "Boss impersonation: secrecy and gift card codes."
+ },
+ {
+  "category": "otp_theft",
+  "label": "scam",
+  "text": "Your electricity token was not generated. Reply with your card details to receive a refund within 1 hour.",
+  "reason": "Refund story to collect card details, with a deadline."
+ },
+ {
+  "category": "pos_trick",
+  "label": "scam",
+  "text": "A stranger at the ATM says: 'Your card is stuck, give me your PIN and I will cancel it for you.'",
+  "reason": "Shoulder-surfing and card swap. Never share your PIN."
+ },
+ {
+  "category": "pos_trick",
+  "label": "scam",
+  "text": "The POS agent says: 'Network is failing, let me hold your card and PIN and I will come back in five minutes.'",
+  "reason": "Your card and PIN must never leave your hands."
+ },
+ {
+  "category": "pos_trick",
+  "label": "scam",
+  "text": "A man at the POS stand says the machine charged you twice and asks for your PIN again to refund the extra amount.",
+  "reason": "Fake double charge to get your PIN a second time."
+ },
+ {
+  "category": "fake_alert",
+  "label": "scam",
+  "text": "Customer sends a transfer screenshot showing 'Successful' but your banking app shows no credit. He says the alert will come later; please release the goods.",
+  "reason": "Screenshots are easy to fake. Release goods only after your own app shows the money."
+ },
+ {
+  "category": "fake_alert",
+  "label": "scam",
+  "text": "CREDIT: NGN 250,000 pending. To release the funds, pay a NGN 12,000 activation fee to the account below.",
+  "reason": "A real credit never needs a fee to release."
+ },
+ {
+  "category": "delivery_scam",
+  "label": "scam",
+  "text": "Your parcel is stuck at the airport. Pay NGN 6,800 at parcel-release.click to avoid return.",
+  "reason": "Fee link on a cheap domain for a parcel you did not expect."
+ },
+ {
+  "category": "fee_scam",
+  "label": "scam",
+  "text": "You won a brand new phone in the Ziva loyalty draw. Pay NGN 3,500 delivery fee to receive it.",
+  "reason": "Prize that needs a fee is a scam."
+ },
+ {
+  "category": "fee_scam",
+  "label": "scam",
+  "text": "Win big! Send NGN 1,000 to join the lucky draw, winners get NGN 500,000 daily. Guaranteed winners every day.",
+  "reason": "Paid lottery with guaranteed winners is not real."
+ },
+ {
+  "category": "crypto_scheme",
+  "label": "scam",
+  "text": "Forex signals group: deposit NGN 100,000 and we return NGN 400,000 in 14 days. Risk free, screenshots of winners inside.",
+  "reason": "Guaranteed fast returns. Early members get paid with new members' money."
+ },
+ {
+  "category": "link_scam",
+  "label": "scam",
+  "text": "Your account has been compromised. Open kora-secure-login.info and enter your username, password and token to protect your money.",
+  "reason": "Fake login page on a lookalike domain."
+ },
+ {
+  "category": "impersonation",
+  "label": "scam",
+  "text": "Hello, this is your landlord. We changed bank. Please send the rent to this new account number and ignore the old one.",
+  "reason": "Changed account details by message: confirm in person first."
+ },
+ {
+  "category": "impersonation",
+  "label": "scam",
+  "text": "School fees update: kindly pay the balance to the new account number below. The old account is no longer in use.",
+  "reason": "Payment redirection. Confirm with the school office directly."
+ },
+ {
+  "category": "otp_theft",
+  "label": "scam",
+  "text": "Dear student, your scholarship of NGN 250,000 is approved. Send your BVN, card number and PIN to receive it.",
+  "reason": "No grant needs your PIN or card number."
+ },
+ {
+  "category": "link_scam",
+  "label": "scam",
+  "text": "Your data bundle will expire in 1 hour. Open ziva-renew.top and enter your card details to renew.",
+  "reason": "Deadline plus a cheap lookalike domain asking for card details."
+ },
+ {
+  "category": "otp_theft",
+  "label": "scam",
+  "text": "Your account is on hold. Call this number and give the agent the six-digit code we sent to restore access.",
+  "reason": "The six-digit code is your OTP. Never read it out."
+ },
+ {
+  "category": "fee_scam",
+  "label": "scam",
+  "text": "Congratulations, your phone number was selected for a NGN 750,000 cash prize. Reply with your full name, BVN and account number.",
+  "reason": "Prize bait used to collect identity details."
+ },
+ {
+  "category": "delivery_scam",
+  "label": "scam",
+  "text": "Customs notice: your package needs a clearance payment of NGN 9,000. Pay now to avoid extra charges.",
+  "reason": "Unexpected clearance fee with pressure."
+ },
+ {
+  "category": "safe_notification",
+  "label": "real",
+  "text": "Orbit Bank: You received NGN 7,500.00 from CHIDI K. Your new balance is NGN 31,240.00. Thank you for banking with us.",
+  "reason": "Plain credit notice with a balance and no request."
+ },
+ {
+  "category": "safe_notification",
+  "label": "real",
+  "text": "Your OTP for the transfer of NGN 25,000 is 118452. Valid for 5 minutes. If you did not request this, ignore this message and do not share the code.",
+  "reason": "You started the transfer, and the message warns you not to share the code."
+ },
+ {
+  "category": "safe_telco",
+  "label": "real",
+  "text": "Ziva: Your 1.5GB weekly plan has been activated. It expires on 01-Nov. Use the Ziva app to renew.",
+  "reason": "Plan confirmation that points to the official app."
+ },
+ {
+  "category": "safe_notification",
+  "label": "real",
+  "text": "Your Orbit Bank statement for September is ready. Sign in to the Orbit app to view it. We will never ask for your PIN or OTP.",
+  "reason": "Directs you to the app and repeats the safety warning."
+ },
+ {
+  "category": "safe_delivery",
+  "label": "real",
+  "text": "ShopNaija: Your order #31982 is on its way. The rider will call you from the number on your tracking page. Pay only through the app.",
+  "reason": "Order you placed, tracking info, payment through the app only."
+ },
+ {
+  "category": "safe_receipt",
+  "label": "real",
+  "text": "Token purchase of NGN 2,000 was successful. Token: 4455-7788-1122-9900. Ref PC-90321.",
+  "reason": "Receipt for something you bought, with a reference."
+ },
+ {
+  "category": "safe_personal",
+  "label": "real",
+  "text": "Hey, are we still meeting at 4? I'm leaving the office now.",
+  "reason": "Ordinary chat with no money, links or pressure."
+ },
+ {
+  "category": "safe_notification",
+  "label": "real",
+  "text": "Dear parent, school resumes on 2 November. Fees can be paid at the school bursary or through the school's official app.",
+  "reason": "Directs payment to official channels."
+ },
+ {
+  "category": "safe_notification",
+  "label": "real",
+  "text": "Your loan repayment of NGN 8,000 was received. Thank you. Outstanding balance: NGN 24,000.",
+  "reason": "Confirms a payment with a balance and asks for nothing."
+ },
+ {
+  "category": "safe_receipt",
+  "label": "real",
+  "text": "CITY MART, Terminal 4021XXXX, RRN 551203948812, Amount NGN 6,300.00, Approved, Customer copy.",
+  "reason": "Complete POS slip details."
+ },
+ {
+  "category": "safe_personal",
+  "label": "real",
+  "text": "Your appointment with Dr. Okeke is confirmed for Thursday at 9:30am. Call the clinic if you need to reschedule.",
+  "reason": "Appointment confirmation with no payment or secrets."
+ }
+]
