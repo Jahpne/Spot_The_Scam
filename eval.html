@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spot the Scam | Model benchmark</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { overflow: auto; }
+    #app { max-width: 980px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin: 8px 0 18px; }
+    th, td { border: 1px solid var(--line); padding: 6px 8px; text-align: right; }
+    th:first-child, td:first-child { text-align: left; }
+    th { background: var(--surface-2); }
+    pre { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px; overflow: auto; font-size: 0.8rem; }
+    .row { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0; }
+    .note { margin: 10px 0; }
+  </style>
+</head>
+<body>
+<div id="app">
+  <h1 style="font-size:1.8rem">Model benchmark</h1>
+  <p class="sub">Measures four ways of judging a message on the labelled test sets, using the real model in this browser:
+    <b>Rules</b> (no AI), <b>AI</b> (fixed 4 examples), <b>AI + DB</b> (examples retrieved from the database), and <b>Hybrid</b> (rules combined with AI + DB).
+    Nothing here is made up: every number comes from running the model on this page.</p>
+  <div class="note card-lite">
+    <b>Sets.</b> <i>Game cards</i> were used to build the rules, so they are not an independent test. <i>Held-out</i> was written before the rules.
+    <i>Stress</i> was written to break the rules. Retrieval skips any database row that is almost identical to the test message (similarity 0.95 or more) so it cannot cheat.
+    "Unsure" counts as wrong in <i>accuracy</i>. "Scams called real" is the dangerous mistake.
+  </div>
+  <div class="row">
+    <button id="btn-load" class="btn">1. Load AI model</button>
+    <button id="btn-rules" class="btn">Run rules only (instant)</button>
+    <button id="btn-run" class="btn primary" disabled>2. Run full benchmark</button>
+  </div>
+  <div id="meter" class="meter" hidden><i id="bar"></i></div>
+  <p id="status" class="dim">Ready.</p>
+  <div id="out"></div>
+  <div class="row" id="export" hidden>
+    <button id="btn-json" class="btn">Download results.json</button>
+    <button id="btn-md" class="btn">Copy markdown table</button>
+  </div>
+  <pre id="md" hidden></pre>
+</div>
+<script src="data.js"></script>
+<script src="checker.js"></script>
+<script src="db.js"></script>
+<script src="ai.js"></script>
+<script src="eval.js"></script>
+</body>
+</html>

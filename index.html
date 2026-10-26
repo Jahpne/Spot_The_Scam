@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0b12">
+  <title>Spot the Scam | Real or scam? You decide.</title>
+  <meta name="description" content="A quick game that trains you to spot fake bank alerts, phishing texts and POS tricks. Works offline.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Spot the Scam">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <header class="topbar">
+      <div class="brand-mini">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3Z" fill="#8b5cf6"/><path d="m8.5 12 2.6 2.6 4.6-5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Spot the Scam</span>
+      </div>
+      <span id="net-pill" class="pill online">online</span>
+    </header>
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="screen active">
+      <div class="hero">
+        <h1>Real or scam?</h1>
+        <p class="sub">Fake bank alerts, phishing texts and POS tricks cost Nigerians real money. Train your eyes in 2 minutes.</p>
+      </div>
+
+      <div class="card-lite level-card">
+        <div class="lv-row"><b id="home-level">Lv 1 Easy Target</b><span id="home-xp" class="dim">0 XP</span></div>
+        <div class="xpbar"><i id="home-xpbar"></i></div>
+      </div>
+
+      <div class="menu">
+        <button id="btn-classic" class="btn primary big">
+          <span>Play</span><small>10 messages</small>
+        </button>
+        <div class="row2">
+          <button id="btn-daily" class="btn tile">
+            <span>Daily challenge</span><small id="daily-sub">8 messages, same for everyone</small>
+          </button>
+          <button id="btn-endless" class="btn tile">
+            <span>Endless</span><small>3 lives. How far can you go?</small>
+          </button>
+        </div>
+        <button id="btn-scan-tab" class="btn tile checker-tile">
+          <span>Scam Checker</span><small>Paste a message, link or APK file. AI and database check it.</small>
+        </button>
+        <div class="row2">
+          <button id="btn-rules" class="btn tile slim"><span>Golden rules</span></button>
+          <button id="btn-stats" class="btn tile slim"><span>My stats</span></button>
+        </div>
+      </div>
+
+      <div class="settings">
+        <label class="switch"><input id="opt-timer" type="checkbox"><span>20 second timer</span></label>
+        <label class="switch"><input id="opt-sound" type="checkbox"><span>Sound</span></label>
+      </div>
+
+      <button id="btn-install" class="btn ghost" hidden>Install app on your phone</button>
+      <p id="offline-ready" class="fine ok" hidden>Ready to play offline.</p>
+      <p class="fine dim">On iPhone: tap Share, then Add to Home Screen. All bank and company names here are fictional.</p>
+    </section>
+
+    <!-- ============ PLAY ============ -->
+    <section id="play" class="screen">
+      <div class="hud">
+        <button id="btn-quit" class="icon-btn" aria-label="Quit to menu">&times;</button>
+        <div class="hud-mid">
+          <b id="hud-count">1 / 10</b>
+          <span id="hud-lives" class="lives" hidden></span>
+        </div>
+        <div class="hud-score"><b id="hud-score">0</b><small>points</small></div>
+      </div>
+      <div class="hud2">
+        <span id="hud-streak" class="chip" hidden>Streak 0</span>
+        <span id="hud-mult" class="chip hot" hidden>x1.5</span>
+      </div>
+      <div id="timer" class="timer" hidden><i id="timer-bar"></i></div>
+
+      <div id="stage" class="stage" aria-live="polite"></div>
+
+      <div id="answers" class="answers">
+        <button id="btn-scam" class="btn ans scam"><span class="ic">&#10005;</span>Scam<small>press S</small></button>
+        <button id="btn-real" class="btn ans real"><span class="ic">&#10003;</span>Real<small>press R</small></button>
+      </div>
+
+      <div id="sheet" class="sheet" hidden role="status">
+        <div id="sheet-verdict" class="verdict"></div>
+        <p id="sheet-why" class="why"></p>
+        <div id="sheet-gain" class="gain"></div>
+        <button id="btn-check-card" class="btn tiny ghost">Run the Scam Checker on this message</button>
+        <button id="btn-next" class="btn primary big">Next</button>
+      </div>
+    </section>
+
+    <!-- ============ RESULT ============ -->
+    <section id="result" class="screen"></section>
+
+    <!-- ============ SCAM CHECKER ============ -->
+    <section id="scan" class="screen">
+      <div class="page-head"><button class="btn tiny" data-home>&lsaquo; Back</button><h2>Scam Checker</h2></div>
+      <div class="statusbar">
+        <span id="db-chip" class="chip">Database: loading</span>
+        <span id="ai-chip" class="chip">AI: off</span>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="What to check">
+        <button id="tab-msg" class="tab active" role="tab" aria-selected="true">Message</button>
+        <button id="tab-url" class="tab" role="tab" aria-selected="false">Link</button>
+        <button id="tab-apk" class="tab" role="tab" aria-selected="false">APK file</button>
+      </div>
+
+      <div id="pane-msg" class="pane">
+        <label class="switch pcm"><input id="opt-pcm" type="checkbox"><span>Show results in Nigerian Pidgin</span></label>
+        <textarea id="scan-input" class="textarea" rows="5" placeholder="Paste the SMS, WhatsApp message, email or call script here..." aria-label="Message to check"></textarea>
+        <div class="chips-row">
+          <span class="dim">Try:</span>
+          <button class="chip-btn" data-example="0">Fake bank text</button>
+          <button class="chip-btn" data-example="1">Real alert</button>
+          <button class="chip-btn" data-example="2">Tricky one</button>
+        </div>
+        <button id="btn-check-msg" class="btn primary big">Check message</button>
+
+        <div class="card-lite ai-box">
+          <b>AI second opinion (optional)</b>
+          <p class="fine dim">A small open model (Qwen2.5-0.5B-Instruct, Apache-2.0) runs on your phone, so your messages stay private. One-time download of roughly 0.5 to 0.8 GB. Use Wi-Fi. Without it, the checker still works with rules and the database.</p>
+          <button id="btn-ai-on" class="btn">Turn on AI</button>
+          <div id="ai-progress" class="meter" hidden><i id="ai-bar"></i></div>
+          <p id="ai-status" class="fine"></p>
+        </div>
+      </div>
+
+      <div id="pane-url" class="pane" hidden>
+        <input id="url-input" class="textinput" type="text" inputmode="url" autocapitalize="off" spellcheck="false" placeholder="Paste a link, e.g. bank-update.xyz/login" aria-label="Link to check">
+        <button id="btn-check-url" class="btn primary big">Check link</button>
+      </div>
+
+      <div id="pane-apk" class="pane" hidden>
+        <p class="dim">Got an app file (.apk) sent on WhatsApp or by link? Check what it asks permission for before you install it. The file stays on your phone.</p>
+        <input id="apk-input" class="textinput" type="file" accept=".apk,application/vnd.android.package-archive" aria-label="APK file">
+        <button id="btn-check-apk" class="btn primary big">Inspect file</button>
+      </div>
+
+      <div id="scan-result" aria-live="polite"></div>
+
+      <div class="card-lite what-check">
+        <h3>What we check</h3>
+        <ul>
+          <li><b>Messages:</b> requests for your PIN, OTP, BVN or card details, fees to receive money, "safe account" and refund tricks, lookalike links, fake urgency, prizes, plus the AI's second opinion.</li>
+          <li><b>Links:</b> shortened links, cheap look-alike domains, fake brand names, hidden "@" tricks, no HTTPS.</li>
+          <li><b>APK files:</b> permissions that read SMS, watch the screen or draw over other apps.</li>
+        </ul>
+        <p class="fine dim"><b>What we do not check:</b> website security certificates, how old a domain is, what a website contains, or an app's code. Those need a server or a paid API. Nothing here is a guarantee.</p>
+      </div>
+    </section>
+
+    <!-- ============ RULES ============ -->
+    <section id="rules" class="screen">
+      <div class="page-head"><button class="btn tiny" data-home>&lsaquo; Back</button><h2>Golden rules</h2></div>
+      <ul id="rules-list" class="rules"></ul>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section id="stats" class="screen">
+      <div class="page-head"><button class="btn tiny" data-home>&lsaquo; Back</button><h2>My stats</h2></div>
+      <div id="stats-body"></div>
+    </section>
+
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="checker.js"></script>
+  <script src="db.js"></script>
+  <script src="apk.js"></script>
+  <script src="ai.js"></script>
+  <script src="game.js"></script>
+  <script src="scan.js"></script>
+</body>
+</html>
