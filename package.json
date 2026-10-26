@@ -1,0 +1,12 @@
+{
+  "name": "spot-the-scam",
+  "version": "3.0.0",
+  "description": "Spot the Scam: a scam-awareness game and offline-first Scam Checker (rules + database + open-weight AI)",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/run-tests.mjs",
+    "build-db": "node tools/build-db.mjs",
+    "serve": "python3 -m http.server 8000"
+  }
+}
