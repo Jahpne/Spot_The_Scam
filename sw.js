@@ -16,7 +16,7 @@
 
    To ship an update: change VERSION, then redeploy.
    ========================================================================== */
-const VERSION = 'v4';
+const VERSION = 'v5';
 const CACHE = 'spot-the-scam-' + VERSION;
 const LIB_CACHE = 'spot-the-scam-lib';
 
@@ -94,3 +94,4 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+                  
