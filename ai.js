@@ -26,6 +26,13 @@
     _pipe: null,
     _loading: null,
 
+    /** True for connection problems. False for "this file variant does not exist / is not supported". */
+    isNetworkError(e) {
+      const m = String((e && e.message) || e || '');
+      if (/404|could not locate|not found|no available backend|webgpu|f16|unsupported|out of memory/i.test(m)) return false;
+      return /fetch|network|failed to|load failed|aborted|timeout|offline|ERR_/i.test(m) || (typeof navigator !== 'undefined' && navigator.onLine === false);
+    },
+
     supported() {
       return typeof WebAssembly === 'object';
     },
@@ -50,7 +57,7 @@
       this._loading = (async () => {
         const tf = await import(LIB_URL);
         tf.env.allowLocalModels = false;
-        const files = {};
+        let files = {};   // reset for every variant so totals never add up across attempts
         const progress = (p) => {
           if (p.status === 'progress' && p.total) {
             files[p.file] = { loaded: p.loaded, total: p.total };
@@ -69,6 +76,7 @@
 
         let last;
         for (const a of attempts) {
+          files = {};
           try {
             onProgress({ pct: 0, text: `loading ${a.dtype} on ${a.device}` });
             this._pipe = await tf.pipeline('text-generation', MODEL_ID, { ...a, progress_callback: progress });
@@ -80,6 +88,11 @@
           } catch (e) {
             last = e;
             console.warn('[ai] variant failed', a, e);
+            // A dropped connection must NOT trigger a second big download. Stop and tell the user.
+            if (AI.isNetworkError(e)) {
+              last = new Error('The connection dropped during the download, so it stopped. Nothing else was downloaded. Try again on Wi-Fi.');
+              break;
+            }
           }
         }
         throw last || new Error('model could not be loaded');
@@ -118,3 +131,4 @@
 
   root.AI = AI;
 })(typeof self !== 'undefined' ? self : this);
+       
