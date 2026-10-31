@@ -4,9 +4,9 @@
 
 Built for **OPEN//BUILD 2026** (Open Source Community Africa, Ile-Ife).
 
-- Live demo: `<paste your Vercel link here>`
-- Message database repo: `<paste your ScamM_db GitHub link here>`
-- Team: `<Member 1, University>` and `<Member 2, University>`
+- Live demo: `https://spotthescam.vercel.app`
+- Message database repo: `https://github.com/Jahpne/ScamM_db`
+- Team: `Augustine David, University Of Uyo` and `Ekpeakhena Oiseokhemehimi Benedict, University Of Benin`
 
 ---
 
