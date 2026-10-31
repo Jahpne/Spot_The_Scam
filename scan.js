@@ -225,6 +225,11 @@
   /* ---------- AI box ---------- */
   async function turnOnAI() {
     if (!AI.supported()) { toast('This browser cannot run the AI model'); return; }
+    const cell = navigator.connection && navigator.connection.type === 'cellular';
+    const warn = cell
+      ? 'You seem to be on MOBILE DATA. The AI needs a one-time download of about 0.4 to 0.8 GB (more if the connection drops and it has to restart). Use Wi-Fi if you can. Download now?'
+      : 'The AI needs a one-time download of about 0.4 to 0.8 GB. Use Wi-Fi. Download now?';
+    if (!window.confirm(warn)) return;
     const bar = $('#ai-bar'), wrap = $('#ai-progress'), st = $('#ai-status');
     wrap.hidden = false;
     st.textContent = 'Starting...';
@@ -298,3 +303,4 @@
   window.ScanUI = { onShow, openWithText, checkMessage, setTab };
   window.addEventListener('DOMContentLoaded', init);
 })();
+   
