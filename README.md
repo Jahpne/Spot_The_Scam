@@ -159,4 +159,3 @@ Claude (Anthropic) helped write code, test data, documentation and the pitch dec
 | ONNX Runtime Web, Microsoft | MIT | Used by Transformers.js |
 | jsDelivr | free CDN | Serves the library files |
 
-Please verify each licence on its own page. The code and the message database in this repository are released under **Apache-2.0** (see `LICENSE`). The message database is original work: all names, numbers and websites are fictional. A public dataset such as the UCI SMS Spam Collection (CC BY 4.0, English spam, not Nigerian) is a useful optional extra benchmark, but it is **not** used here.
